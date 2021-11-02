@@ -10,6 +10,15 @@ robocopy [source folder to copy\] [destination] /e /copy:DATO /dcopy:DAT /tee /v
 
 ```robocopy "H:\Desktop\Archives\" "E:\" /e /copy:DATO /dcopy:DAT /tee /v /ts /log:E:\robocopy20210804.log```
 
+* F7 + arrow to go back to last command
+* If destination folder becomes hidden, append ``` /A-:SH ```
+* If you need to exclude a folder, add to end ``` /XD [path] ```
+
+```
+robocopy E:\ K:\accessions_born-digital\utarms-submission\Clarkson_S\ /e /dcopy:DAT /copy:DATO /tee /v /ts /log:K:\accessions_born-digital\utarms-submission\robocopy20210910.log /XD "e:\System Volume Information" /A-:SH
+```
+
+
 # Flags
 **/e**		Copies subdirectories, including empty directories.
 
