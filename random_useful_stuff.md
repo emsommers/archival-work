@@ -11,11 +11,11 @@ e: is the drive name
 # Delete hidden files
 ## Windows
 
-``` del * /A:H ```
+``` del * /a:h ```
 
 To delete hidden files from subfolders, add the /S flag
 
-``` del * /A:H /S ```
+``` del * /a:h /S ```
 
 To delete resource forks
 
@@ -29,6 +29,9 @@ To delete temporary or recovered files
 
 ``` del /p /s /a *.tmp ```
 
+[Source/Syntax](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/del)
+
+
 ## Linux
 ``` find . -type f -name ".*" -delete ```
 
@@ -38,18 +41,25 @@ To delete thumbs.db
 
 # Tree list
 ## Windows
-``` tree /f ```
+
+tree [drive:\][path] /f /a > [output]
+
+``` tree "K:\B2021-0001" /f /a > tree_b2021-0001.txt ```
 
 ## Linux
-``` ls -a -h -R -x -l ```
+tree -a -s -D -N [/myPath/here] > [output.txt]
 
-D = date last modified
+``` tree -a -s -D -N /storage/ingest/B2021-0002 > /storage/metadata/B2021-0002/tree.txt ```
 
-f = full path
+To print tree inside cwd: **./**
 
-h = size
+```tree -a -s -D -N ./ > output.txt```
 
-o = output
+To print HTML version of tree:
+
+```tree -a -s -D -N -H --nolinks /storage/ingest/B2021-0002 > /storage/metadata/B2021-0002/tree.html```
+
+**For help:** tree --help
 
 # Brunnhilde
 
