@@ -1,4 +1,18 @@
-# Wipe HD or flash drive (Windows)
+- [Wipe HD or flash drive](#wipe-hd-or-flash-drive)
+  * [Windows](#windows)
+  * [Linux](#linux)
+- [Delete hidden files](#delete-hidden-files)
+  * [Windows](#windows-1)
+  * [Linux](#linux-2)
+- [Tree list](#tree-list)
+  * [Windows](#windows-2)
+  * [Linux](#linux-2)
+- [Brunnhilde](#brunnhilde)
+
+---
+
+# Wipe HD or flash drive 
+## Windows
 
 ``` format e: /fs:FAT32 /p:2 ```
 
@@ -7,6 +21,12 @@
 e: is the drive name
 
 [Source](https://www.lifewire.com/use-the-format-command-to-write-zeros-to-a-hard-drive-2626162)
+
+## Linux
+
+```sudo dd if=/dev/zero of=/dev/sdc1```
+
+use `df` command to list disks and find the correct path, e.g. /dev/sdc1
 
 # Delete hidden files
 ## Windows
@@ -63,7 +83,7 @@ To print HTML version of tree:
 
 # Brunnhilde
 
-``` brunnhilde.py -n [source] [destination] [basename] ```
+`brunnhilde.py` -n [source] [destination] [basename]
 
 ``` brunnhilde.py -n /storage/UTARMS/submission/b2021-0002_Lang/ /storage/UTARMS/metadata/ b2021-0002_Lang ```
 
