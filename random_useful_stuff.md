@@ -24,7 +24,7 @@ e: is the drive name
 
 ## Linux
 
-```sudo dd if=/dev/zero of=/dev/sdc1```
+```sudo dd if=/dev/zero of=/dev/sdc1 status=progress```
 
 use `df` command to list disks and find the correct path, e.g. /dev/sdc1
 
