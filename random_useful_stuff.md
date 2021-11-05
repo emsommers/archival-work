@@ -8,6 +8,7 @@
   * [Windows](#windows-2)
   * [Linux](#linux-2)
 - [Brunnhilde](#brunnhilde)
+- [How to make scripts executable from anywhere on the computer](#how-to-make-scripts-executable-from-anywhere-on-the-computer)
 
 ---
 
@@ -87,4 +88,20 @@ To print HTML version of tree:
 
 ``` brunnhilde.py -n /storage/UTARMS/submission/b2021-0002_Lang/ /storage/UTARMS/metadata/ b2021-0002_Lang ```
 
+# How to make scripts executable from anywhere on the computer
 
+In home directory, open `.bashrc` file:
+
+```nano .bashrc```
+
+At the bottom of the file, add the following lines indicating the location of your scripts folder:
+
+```
+# My scripts path
+export PATH="/home/sommerse/Desktop/Scripts/archival-work:$PATH"
+```
+
+Save the file and exit, then in Terminal:
+``` source ~/.bashrc ```
+
+Voila! You can now run scripts in the Terminal from any location
