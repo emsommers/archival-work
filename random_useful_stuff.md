@@ -9,7 +9,7 @@
   * [Linux](#linux-2)
 - [Brunnhilde](#brunnhilde)
 - [How to make scripts executable from anywhere on the computer](#how-to-make-scripts-executable-from-anywhere-on-the-computer)
-
+- [Permissions](#permissions)
 ---
 
 # Wipe HD or flash drive 
@@ -105,3 +105,13 @@ Save the file and exit, then in Terminal:
 ``` source ~/.bashrc ```
 
 Voila! You can now run scripts in the Terminal from any location
+
+# Permissions
+Changing r/w/e permissions when a new user account is created
+
+```chown -R <user:group> <directory>```
+
+e.g. ``` chown -R sommerse:floppy /storage ```
+
+To make check the user's groups: ```groups username```
+To check members of a group: ```members groupname```
