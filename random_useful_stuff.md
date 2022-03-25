@@ -109,9 +109,7 @@ Voila! You can now run scripts in the Terminal from any location
 # Permissions
 Changing r/w/e permissions when a new user account is created
 
-```chown -R <user:group> <directory>```
-
-e.g. ``` chown -R sommerse:floppy /storage ```
+```sudo chmod u=rwx,g=rwx,o=r /storage```
 
 To make check the user's groups: ```groups username```
 To check members of a group: ```members groupname```
