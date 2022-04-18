@@ -1,0 +1,79 @@
+#academic transcript
+[A|a]cademic\s[T|t]ranscript
+
+#ACORN
+\b(ACORN)\b
+
+#grade(s)
+\b(grades)\b
+\b(grade)\b
+
+#mark(s)
+\b(marks)\b
+
+#ROSI
+\b(ROSI)\b
+
+#U of T student id
+([9]{1})([0-9]{8})
+([1]{1})([0-9]{9})
+
+#accommodation
+[A|a]ccommodation
+
+#antisemitism/ic or anti-semitism/ic
+[A|a]nti\D?semiti(c|sm)
+
+#depression
+[D|d]epression
+[D|d]epressed
+
+#disciplined
+[D|d]isciplin(e|ed)
+
+#fired
+[F|f]ired
+
+#grievance
+[G|g]rievance
+
+#homophobia/ic
+[H|h]omophobi(a|c)
+
+#letter of recommendation
+[L|l]etter\sof\srecommendation
+
+#medical treatment
+[M|m]edical\streatment
+
+#mental health
+[M|m]ental\s[H|h]ealth
+
+#patient(s)
+\b(patient)\b
+\b(patients)\b
+
+#plagiarize/ism
+[P|p]lagiari(ze|sm)
+
+#racist/ism
+[R|r]acis(t|m)
+
+#salary
+[S|s]alary
+
+#search committee
+[S|s]earch\s[C|c]ommittee
+
+#sexist/ism
+[S|s]exis(t|m)
+
+#sexual assault or harassment
+[S|s]exual\s[A|a]ssault
+[S|s]exual\s[H|h]arassment
+
+#surgery/ical
+[S|s]urg(ery|ical)
+
+#taxes
+[T|t]axes
