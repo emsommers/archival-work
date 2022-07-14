@@ -4,7 +4,7 @@ rsync -rltv --progress --stats --log-file=[*log file name and location*] [*stuff
 Example: 
 
 ```
-rsync -rltv --progress --stats --log-file=/storage/UTARMS/metadata/b2021-0002_lang/rsync20210910.log /storage/UTARMS/submission/Lang /storage/UTARMS/ingest/b2021-0002_Lang
+rsync -rltv --progress --stats /home/sommerse/Desktop/UTARMS-K/accessions_born-digital/utarms-ingest/B2019-0005/ /storage/UTARMS/in-process/B2019-0005_Kidd
 ```
 
 **-r** recursive
