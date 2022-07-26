@@ -10,6 +10,7 @@
 - [Brunnhilde](#brunnhilde)
 - [How to make scripts executable from anywhere on the computer](#how-to-make-scripts-executable-from-anywhere-on-the-computer)
 - [Permissions](#permissions)
+- [Mount drive (when it is not showing up)](#mount-drive)
 ---
 
 # Wipe HD or flash drive 
@@ -113,3 +114,20 @@ Changing r/w/e permissions when a new user account is created
 
 To make check the user's groups: ```groups username```
 To check members of a group: ```members groupname```
+
+# Mount drive
+Find the label of the drive, e.g. /dev/sdc2
+
+```sudo fdisk -l```
+
+Create mounting point (if it doesn't already exist)
+
+```sudo mkdir /media/usb-drive```
+
+Mount drive
+
+```sudo mount /dev/sdc2 /media/usb-drive```
+
+Unmount drive
+
+```umount /media/usb-drive```
