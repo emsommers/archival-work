@@ -84,10 +84,14 @@ To print HTML version of tree:
 **For help:** tree --help
 
 # Brunnhilde
+https://github.com/tw4l/brunnhilde
 
-`brunnhilde.py` -n [source] [destination] [basename]
+`brunnhilde.py` --hash HASH -n [source] [destination] [basename]
 
-``` brunnhilde.py -n /storage/UTARMS/submission/b2021-0002_Lang/ /storage/UTARMS/metadata/ b2021-0002_Lang ```
+``` brunnhilde.py --hash sha256 -n /storage/UTARMS/submission/b2021-0002_Lang/ /storage/UTARMS/metadata/ b2021-0002_Lang ```
+
+To upgrade:
+``` sudo pip install brunnhilde --upgrade ```
 
 # How to make scripts executable from anywhere on the computer
 
