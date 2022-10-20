@@ -135,3 +135,10 @@ Mount drive
 Unmount drive
 
 ```umount /media/usb-drive```
+
+# ffmpeg
+https://ffmpeg.org/
+
+ffmpeg -i [source] [output]
+
+```ffmpeg -i /storage/UTARMS/myfile.wmv /storage/UTARMS/myfile.mp4```

@@ -9,7 +9,7 @@ destination = '/home/sommerse/Desktop/UTARMS/03_in-process'
 #folder names
 sip_name= input ("Enter accession-number_name, e.g. B2019-0005_Kidd: ")
 sip_dir = os.path.join(destination, sip_name)
-sip_files = "FILES_" + sip_name
+sip_files = "files_" + sip_name
 object_dir = os.path.join(sip_dir, "objects")
 accession_dir = os.path.join(object_dir, sip_files)
 metadata_dir = os.path.join(sip_dir, "metadata")
