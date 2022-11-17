@@ -30,7 +30,7 @@ Then in the future to use, activate the conda environment:
 * once activated, enter the *whisper* commands you'd like to run
 
 ## Run
-```whisper 'home/myFiles/audio/audioFile.mp3' --model medium --language en --output_dir 'home/myFiles/transcripts'```
+```whisper 'home/myFiles/audio/audioFile.mp3' --model medium --language en --fp16 False --output_dir 'home/myFiles/transcripts'```
 
 Example output
 
