@@ -2,6 +2,9 @@
 
 [[Source link]](https://askubuntu.com/questions/198730/how-to-restore-bashrc-file)
 
+You'll know this happened if your Terminal window suddenly looks like this (note the change in text colour):
+![Terminal window after bashrc has been deleted](/screenshots/screenshot_noBashSettings.png)
+
 1. Copy the skeleton ```.bashrc``` file over to Home folder:
 
 ```
