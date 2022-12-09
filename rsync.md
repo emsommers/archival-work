@@ -18,3 +18,15 @@ rsync -rltv --progress --stats /home/sommerse/Desktop/UTARMS-K/accessions_born-d
 **--progress** show progress during transfer
 
 **--stats** give some file-transfer stats
+
+Can also exclude folders or specific types of files (e.g. hidden one):
+
+```--exclude='myFolderName'```
+
+```--exclude=".*"```
+
+```--exclude="*.jpg"```
+
+```
+rsync -rltv --progress --stats --exclude='System Volume Information' --exclude=".*"  /media/sdc1/ /storage/UTARMS/01_submission/B2017-0008_Bliss
+```

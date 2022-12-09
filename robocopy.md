@@ -1,14 +1,18 @@
 https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy
 
 # Example - file
-robocopy [source] [destination] [file to copy] /copy:DATO /dcopy:DAT /tee /v /ts /log:[destination]\[robocopy][date].log
+robocopy [source] [destination] [file to copy] /copy:DAT /dcopy:DAT /tee /v /ts /log:[destination]\[robocopy][date].log
 
-```robocopy C:\Desktop\ E:\ archives.zip /copy:DAT /dcopy:T /tee /v /ts /log:E:\robocopy20210910.log```
+```
+robocopy C:\Desktop\ E:\ archives.zip /copy:DAT /dcopy:T /tee /v /ts /log:E:\robocopy20210910.log
+```
 
 # Example - folders
-robocopy [source folder to copy\] [destination] /e /copy:DATO /dcopy:DAT /tee /v /ts /log:[destination]\[robocopy][date].log
+robocopy [source folder to copy\] [destination] /e /copy:DAT /dcopy:DAT /tee /v /ts /log:[destination]\[robocopy][date].log
 
-```robocopy "H:\Desktop\Archives\" "E:\" /e /copy:DATO /dcopy:DAT /tee /v /ts /log:E:\robocopy20210804.log```
+```
+robocopy "H:\Desktop\Archives\" "E:\" /e /copy:DAT /dcopy:DAT /tee /v /ts /log:E:\robocopy20210804.log
+```
 
 * F7 + arrow to go back to last command
 * If destination folder becomes hidden, append ``` /A-:SH ```
@@ -22,7 +26,7 @@ robocopy E:\ K:\accessions_born-digital\utarms-submission\Clarkson_S\ /e /dcopy:
 # Flags
 **/e**		Copies subdirectories, including empty directories.
 
-**/copy: DATO**	Specifies which file properties to copy (DATO = data, attributes, time stamps, owner information)
+**/copy: DAT**	Specifies which file properties to copy (DAT = data, attributes, time stamps)
 
 **/dcopy: DAT**	Specifies what to copy in directories (DAT = data, attributes, time stamps)
 
