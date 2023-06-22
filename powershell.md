@@ -4,7 +4,7 @@ A few Powershell commands when working in Windows
 
 ```Get-ChildItem "H:\My Documents\Zoom\*.*" -Recurse -force | Select-Object FullName,CreationTime,LastWriteTime,Length,@{n='SHA256';ex={(Get-FileHash $_.fullname).hash}} | export-csv "H:\My Documents\nameofmyfile.csv"```
 
-Then in Excel to round up the :
+Then in Excel, to round up the bytes (Length column):
 
 * =ROUND((SUM(D3:D15) / 1000000),1) & " MB"
 * =ROUND((SUM(D3:D15) / 1e+9),1) & " GB"
