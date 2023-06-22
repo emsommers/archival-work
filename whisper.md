@@ -36,6 +36,10 @@ Example output
 
 ![Terminal window showing whisper output](/screenshots/screenshot_terminal-whisper.png)
 
+It can also run recursively through a folder of mp3 files. Open Terminal in folder with mp3 files then:
+
+```whisper *.mp3 --model medium --language en --fp16 False --output_dir '/home/myFiles/transcripts'``` 
+
 Output will be saved with the same name as the audio file and includes three files: **.srt**, **.txt**, and **.vtt**
 
 See more information about usage options on the [Whisper GitHub page](https://github.com/openai/whisper#available-models-and-languages), including how to translate speech into English. Or you can run the following command to view all options in the terminal window:

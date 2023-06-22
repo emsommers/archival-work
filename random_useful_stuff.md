@@ -11,6 +11,8 @@
 - [How to make scripts executable from anywhere on the computer](#how-to-make-scripts-executable-from-anywhere-on-the-computer)
 - [Permissions](#permissions)
 - [Mount drive (when it is not showing up)](#mount-drive)
+- [ffmpeg (audio & video conversion)](#ffmpeg)
+- [cd-info](#cd-info)
 ---
 
 # Wipe HD or flash drive 
@@ -88,7 +90,7 @@ https://github.com/tw4l/brunnhilde
 
 `brunnhilde.py` --hash HASH -n [source] [destination] [basename]
 
-``` brunnhilde.py --hash sha256 -n /storage/UTARMS/submission/b2021-0002_Lang/ /storage/UTARMS/metadata/ b2021-0002_Lang ```
+``` brunnhilde.py --hash sha256 -n /storage/UTARMS/01_submission/B2021-0002_Lang/ /storage/UTARMS/05_metadata/B2021-0002_Lang ```
 
 To upgrade:
 ``` sudo pip install brunnhilde --upgrade ```
@@ -119,6 +121,11 @@ Changing r/w/e permissions when a new user account is created
 To make check the user's groups: ```groups username```
 To check members of a group: ```members groupname```
 
+Changing owner and permissions recursively:
+
+```sudo chown -R username:group /path/to/my/files```
+
+```sudo chown -R sommerse:floppy /storage/UTARMS/02_ingest/A2022-0003_HartHouse```
 # Mount drive
 Find the label of the drive, e.g. /dev/sdc2
 
@@ -142,3 +149,12 @@ https://ffmpeg.org/
 ffmpeg -i [source] [output]
 
 ```ffmpeg -i /storage/UTARMS/myfile.wmv /storage/UTARMS/myfile.mp4```
+
+# cd-info
+To learn more about a CD, especially if it is an audio cd
+
+https://linux.die.net/man/1/cd-info
+
+Insert cd into drive then in Terminal enter ```sudo cd-info```
+
+![Terminal window showing cd-info output](/screenshots/screenshot_cd-info.png)

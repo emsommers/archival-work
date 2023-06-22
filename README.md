@@ -10,6 +10,9 @@ Create disk image using DD
 ## mount / unmount
 Connect Digital Archives workstation to UTARMS network drive
 
+## powershell
+A few Powershell commands when working in Windows
+
 ## random_useful_stuff
 Snippets of commands that I use (and often forget!)
 
