@@ -88,9 +88,9 @@ To print HTML version of tree:
 # Brunnhilde
 https://github.com/tw4l/brunnhilde
 
-`brunnhilde.py` --hash HASH -n [source] [destination] [basename]
+`brunnhilde.py` --hash HASH -nz [source] [destination]
 
-``` brunnhilde.py --hash sha256 -n /storage/UTARMS/01_submission/B2021-0002_Lang/ /storage/UTARMS/05_metadata/B2021-0002_Lang ```
+``` brunnhilde.py --hash sha256 -nz /storage/UTARMS/01_submission/B2021-0002_Lang/ /storage/UTARMS/05_metadata/B2021-0002_Lang ```
 
 To upgrade:
 ``` sudo pip install brunnhilde --upgrade ```

@@ -1,7 +1,10 @@
 # archival-work
 Day-to-day processing commands, scripts, and notes for myself
 
-## create_sip
+## convertToPDF
+A few bash commands to convert files to PDF (for access etc.)
+
+## create_sip & create_sip_rsync
 Create empty SIP folders and metadata.csv file for Archivematica
 
 ## iso-disk-image
