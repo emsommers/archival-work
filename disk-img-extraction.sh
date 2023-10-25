@@ -4,6 +4,7 @@
 #use rsync to extract files to /Extracted folder
 #assumes /mnt/diskid exists
 #assumes disktype, hashdeep are installed
+#script by Jess Whyte, https://github.com/jesswhyte/Disk-ID-md5deep
 
 
 #make cwd a variable
