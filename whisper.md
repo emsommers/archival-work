@@ -3,6 +3,7 @@ Using [Whisper](https://github.com/openai/whisper) to transcribe audio oral hist
 
 Thanks to Shawn Graham for the tip from his [blog](https://electricarchaeology.ca/2022/09/22/whisper-from-openai-for-transcribing-audio/).
 
+Keep in mind of [Speech-to-Text Hallucinations](https://www.science.org/content/article/ai-transcription-tools-hallucinate-too) and always spotcheck the outputs!!!
 
 ## Install
 See setup information [here](https://github.com/openai/whisper#setup)
