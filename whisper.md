@@ -65,3 +65,9 @@ whisper --help
 ffmpeg -i input.mp4 output.mp3
 ffmpeg -i '/home/sommerse/Downloads/myVideoFile.mp4' '/home/sommerse/Downloads/myAudioFile.mp3'
 ```
+
+To run ffmpeg recursively through a folder [(source)](https://stackoverflow.com/questions/5784661/how-do-you-convert-an-entire-directory-with-ffmpeg):
+
+```
+for i in *.mp4; do ffmpeg -i "$i" "${i%.*}.mp3"; done
+```
