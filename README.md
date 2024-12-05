@@ -7,6 +7,9 @@ Day-to-day processing commands, scripts, and notes for myself
 [**create_sip**](https://github.com/emsommers/archival-work/blob/main/create_sip.py) & [**create_sip_rsync**](https://github.com/emsommers/archival-work/blob/main/create_sip_rsync.py)
 * Create empty SIP folders and metadata.csv file for Archivematica
 
+[**emlx-files**](https://github.com/emsommers/archival-work/blob/main/emlx-files.md)
+* Converting emlx files to mbox to import into ePadd
+  
 [**iso-disk-image**](https://github.com/emsommers/archival-work/blob/main/iso-disk-image)
 * Create disk image using DD
 
