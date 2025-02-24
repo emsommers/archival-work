@@ -6,8 +6,8 @@ import sys
 import subprocess
 
 # locations of stuff
-sourcedir = '/storage/UTARMS/02_ingest'
-destination = '/storage/UTARMS/03_in-process'
+sourcedir = '/storage/UTARMS/02_in-progress'
+destination = '/storage/UTARMS/03_processed'
 
 sip_name= input ("Enter accession-number_name, e.g. B2019-0005_Kidd: ")
 

@@ -5,7 +5,7 @@ import csv
 import sys
 
 # where I want the folders to go
-destination = '/home/sommerse/Desktop/UTARMS/03_in-process'
+destination = '/home/sommerse/Desktop/UTARMS/03_processed'
 #folder names
 sip_name= input ("Enter accession-number_name, e.g. B2019-0005_Kidd: ")
 sip_dir = os.path.join(destination, sip_name)
