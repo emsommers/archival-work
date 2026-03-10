@@ -9,7 +9,10 @@ Day-to-day processing commands, scripts, and notes for myself
 
 [**emlx-files**](https://github.com/emsommers/archival-work/blob/main/emlx-files.md)
 * Converting emlx files to mbox to import into ePadd
-  
+
+[**exifTool**](https://github.com/emsommers/archival-work/blob/main/exifTool.md)
+* Using [ExifTool](https://exiftool.org/) to work with digital photographs
+
 [**iso-disk-image**](https://github.com/emsommers/archival-work/blob/main/iso-disk-image)
 * Create disk image using DD
 
