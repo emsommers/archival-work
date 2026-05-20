@@ -57,11 +57,24 @@ To delete temporary or recovered files
 
 
 ## Linux
-``` find . -type f -name ".*" -delete ```
+``` 
+find . -type f -name ".*"
+find . -type f -name ".*" -delete
+```
 
 To delete thumbs.db
 
-``` find . -iname thumbs.db -delete ```
+```
+find . -iname thumbs.db
+find . -iname thumbs.db -delete 
+```
+
+To delete empty folders
+
+```
+find -type d -empty
+find -type d -empty -delete
+```
 
 # Tree list
 ## Windows
